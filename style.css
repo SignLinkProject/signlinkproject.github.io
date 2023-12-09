@@ -102,21 +102,33 @@ footer a:hover {
 }
 
 /* Carousel, Button, and other styles remain the same */
+
+/* Carousel Styles */
 .carousel {
     display: flex;
+    justify-content: center; /* Centers slides in the carousel */
+    align-items: center;
     overflow-x: auto;
 }
 
 .carousel-slide {
-    min-width: 300px;
-    margin: 0 10px;
-    position: relative;
+    flex: 0 0 auto; /* Do not stretch the slides */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Aligns slide content vertically */
+    justify-content: center; /* Aligns slide content horizontally */
+    margin: 0 10px; /* Margin between slides */
 }
 
 .carousel-slide img {
     max-width: 100%;
-    border: 3px solid #6E44FF; /* Extracted from your logo */
+    border: 3px solid #6E44FF; /* Adjust if needed */
 }
+
+.button {
+    margin-top: 10px; /* Space between the image and the button */
+}
+
 
 .button {
     background-color: #6E44FF; /* Extracted from your logo */
@@ -244,4 +256,46 @@ footer a:hover {
     .nav-links li {
         margin: 10px 0;
     }
+}
+
+
+/* Language Switcher Styles */
+/* Language Dropdown Styles */
+.language-switcher {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#language-dropdown {
+    padding: 5px 10px;
+    background-color: #ffffff; /* White background */
+    color: #6E44FF; /* Color from your palette */
+    border: 1px solid #6E44FF; /* Same color for border */
+    border-radius: 5px;
+    outline: none; /* Removes the default focus outline */
+    -webkit-appearance: none; /* Removes default styling for Safari */
+    -moz-appearance: none; /* Removes default styling for Firefox */
+    appearance: none; /* Removes default styling */
+    cursor: pointer;
+}
+
+/* Adding a custom arrow indicator */
+.language-switcher:after {
+    /* content: '▼'; Arrow character */
+    position: absolute;
+    right: 15px;
+    top: 14px;
+    color: #6E44FF;
+    pointer-events: none; /* Makes sure clicks on the arrow act like clicks on the select element */
+}
+
+/* Hide arrow for IE10+ */
+#language-dropdown::-ms-expand {
+    display: none;
+}
+
+/* Focus styles for the dropdown */
+#language-dropdown:focus {
+    border-color: #5543cc; /* Darker shade for focus */
 }

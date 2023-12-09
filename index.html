@@ -8,16 +8,16 @@
   <body>
     <!-- Hero Section -->
     <header class="hero">
-        <div class="hero-content">
-            <h1>Linking the World - Sign By Sign</h1>
-            <p>Learn Multiple Sign Languages, Connect to the Industry.</p>
-            <a href="#apply" class="button hero-button">Apply now!</a>
-        </div>
-        <div class="hero-image">
-            <img src="assets/logo.png" alt="Tech Gym Training">
-        </div>
+      <div class="hero-image">
+        <img src="assets/logo.png" alt="Tech Gym Training" />
+      </div>
+      <div class="hero-content">
+        <h1>Linking the World - Sign By Sign</h1>
+        <p>Learn Multiple Sign Languages, Connect to the Industry.</p>
+        <a href="#apply" class="button hero-button">Apply now!</a>
+      </div>
     </header>
-    
+
     <!-- Horizontal Menu -->
     <nav>
       <ul class="menu">
@@ -26,40 +26,77 @@
         <li><a href="#awards">Awards</a></li>
         <li><a href="#media">Media</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li>
+          <a href="#contact"
+            >Language
+            <div class="language-switcher">
+              <select
+                id="language-dropdown"
+                name="languages"
+                onchange="location = this.value;"
+              >
+                <option value="index.html">🇺🇸</option>
+                <option value="index_de.html">🇩🇪</option>
+                <option value="index_pt.html">🇧🇷</option>
+              </select>
+            </div></a
+          >
+        </li>
       </ul>
     </nav>
-    
+
     <!-- Product - Product Section -->
 
     <section id="products">
-        <div class="container">
-            <h2>Features</h2>
-            <div class="product-grid">
-                <div class="product-item">
-                    <div class="product-icon"><img src="assets/programming-icon.png" alt="Programming Skills"></div>
-                    <h3>Programming Skills</h3>
-                    <p>Learn: the most used programming language (Python) to a professional level...</p>
-                </div>
-                <div class="product-item">
-                    <div class="product-icon"><img src="assets/computer-vision-icon.png" alt="Computer Vision"></div>
-                    <h3>Computer Vision</h3>
-                    <p>Learn how to make machines learn to classify images...</p>
-                </div>
-                <div class="product-item">
-                    <div class="product-icon"><img src="assets/machine-learning-icon.png" alt="Machine Learning"></div>
-                    <h3>Machine Learning</h3>
-                    <p>Learn cutting-edge technology such as deep learning...</p>
-                </div>
-                <div class="product-item">
-                    <div class="product-icon"><img src="assets/nlp-icon.png" alt="Natural Language Processing"></div>
-                    <h3>Natural Language Processing</h3>
-                    <p>Make use of recent techniques (Word2Vec, Transformers, etc)...</p>
-                </div>
-                <!-- More items as needed -->
+      <div class="container">
+        <h2>Features</h2>
+        <div class="product-grid">
+          <div class="product-item">
+            <div class="product-icon">
+              <img src="assets/programming-icon.png" alt="Programming Skills" />
             </div>
+            <h3>Programming Skills</h3>
+            <p>
+              Learn: the most used programming language (Python) to a
+              professional level...
+            </p>
+          </div>
+          <div class="product-item">
+            <div class="product-icon">
+              <img
+                src="assets/computer-vision-icon.png"
+                alt="Computer Vision"
+              />
+            </div>
+            <h3>Computer Vision</h3>
+            <p>Learn how to make machines learn to classify images...</p>
+          </div>
+          <div class="product-item">
+            <div class="product-icon">
+              <img
+                src="assets/machine-learning-icon.png"
+                alt="Machine Learning"
+              />
+            </div>
+            <h3>Machine Learning</h3>
+            <p>Learn cutting-edge technology such as deep learning...</p>
+          </div>
+          <div class="product-item">
+            <div class="product-icon">
+              <img
+                src="assets/nlp-icon.png"
+                alt="Natural Language Processing"
+              />
+            </div>
+            <h3>Natural Language Processing</h3>
+            <p>
+              Make use of recent techniques (Word2Vec, Transformers, etc)...
+            </p>
+          </div>
+          <!-- More items as needed -->
         </div>
+      </div>
     </section>
-    
 
     <!-- Media Section -->
     <section id="media">
