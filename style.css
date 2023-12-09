@@ -103,28 +103,51 @@ footer a:hover {
 }
 
 /* Carousel, Button, and other styles remain the same */
+/* Carousel Container Styles */
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 400px; /* Adjust the width to fit two items */
+}
 
 /* Carousel Styles */
 .carousel {
   display: flex;
-  justify-content: center; /* Centers slides in the carousel */
-  align-items: center;
-  overflow-x: auto;
+  transition: transform 0.3s ease-in-out;
 }
 
 .carousel-slide {
-  flex: 0 0 auto; /* Do not stretch the slides */
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Aligns slide content vertically */
-  justify-content: center; /* Aligns slide content horizontally */
-  margin: 0 10px; /* Margin between slides */
+  min-width: 50%; /* Ensures only two items show before pagination */
+  box-sizing: border-box;
+  padding: 0 10px; /* Spacing between slides */
 }
 
 .carousel-slide img {
-  max-width: 200px;
-  border: 3px solid #6e44ff; /* Adjust if needed */
+  width: 100%;
+  border: 3px solid #6e44ff;
 }
+
+/* Carousel Arrow Styles */
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #6E44FF;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.left-arrow {
+  left: 0;
+}
+
+.right-arrow {
+  right: 0;
+}
+
 
 .button {
   margin-top: 10px; /* Space between the image and the button */
