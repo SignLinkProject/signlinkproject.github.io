@@ -1,0 +1,66 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #6E44FF; /* Extracted from your logo */
+    color: white;
+    padding: 2em 0;
+    text-align: center;
+}
+
+header img {
+    max-width: 150px;
+    margin-bottom: 1em;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+}
+
+.carousel-slide {
+    min-width: 300px;
+    margin: 0 10px;
+    position: relative;
+}
+
+.carousel-slide img {
+    max-width: 100%;
+    border: 3px solid #6E44FF; /* Extracted from your logo */
+}
+
+.button {
+    background-color: #6E44FF; /* Extracted from your logo */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.cta-button {
+    background-color: #6E44FF; /* Extracted from your logo */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* Add more styles for other sections, responsiveness, and overall design */
+
+footer {
+    background-color: #6E44FF; /* Extracted from your logo */
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
