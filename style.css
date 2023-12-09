@@ -1,371 +1,365 @@
 /* Basic Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    padding-top: 60px; /* Give space for fixed menu */
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  padding-top: 60px; /* Give space for fixed menu */
 }
 
 /* Style for the header */
 header {
-    background-color: #6E44FF;
-    color: white;
-    padding: 2em 0;
-    text-align: center;
+  background-color: #6e44ff;
+  color: white;
+  padding: 2em 0;
+  text-align: center;
 }
 
 header img {
-    max-width: 150px;
-    margin-bottom: 1em;
+  max-width: 150px;
+  margin-bottom: 1em;
 }
 
 /* Horizontal Menu */
 nav {
-    background-color: #6E44FF;
-    color: white;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
+  background-color: #6e44ff;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 
 .menu {
-    list-style: none;
-    text-align: center;
-    padding: 10px 0;
+  list-style: none;
+  text-align: center;
+  padding: 10px 0;
 }
 
 .menu li {
-    display: inline;
-    margin-right: 20px;
+  display: inline;
+  margin-right: 20px;
 }
 
 .menu a {
-    color: white;
-    text-decoration: none;
-    padding: 5px 10px;
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
 }
 
 .menu a:hover {
-    background-color: #5543cc;
+  background-color: #5543cc;
 }
 
 /* General Section Style */
 section {
-    padding: 2em 0;
-    text-align: center;
+  padding: 2em 0;
+  text-align: center;
 }
 
 /* Form Styles */
 form {
-    margin: 0 auto;
-    max-width: 400px;
-    padding: 1em;
+  margin: 0 auto;
+  max-width: 400px;
+  padding: 1em;
 }
 
-form input, form textarea {
-    width: 100%;
-    padding: 0.5em;
-    margin-bottom: 1em;
-    border: 1px solid #ddd;
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border: 1px solid #ddd;
 }
 
 form button {
-    background-color: #6E44FF;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
+  background-color: #6e44ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
 }
 
 /* Footer Styles */
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-    margin-top: 1em;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  margin-top: 1em;
 }
 
 footer a {
-    color: #6E44FF;
-    text-decoration: none;
+  color: #6e44ff;
+  text-decoration: none;
 }
 
 footer a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* Carousel, Button, and other styles remain the same */
 
 /* Carousel Styles */
 .carousel {
-    display: flex;
-    justify-content: center; /* Centers slides in the carousel */
-    align-items: center;
-    overflow-x: auto;
+  display: flex;
+  justify-content: center; /* Centers slides in the carousel */
+  align-items: center;
+  overflow-x: auto;
 }
 
 .carousel-slide {
-    flex: 0 0 auto; /* Do not stretch the slides */
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Aligns slide content vertically */
-    justify-content: center; /* Aligns slide content horizontally */
-    margin: 0 10px; /* Margin between slides */
+  flex: 0 0 auto; /* Do not stretch the slides */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Aligns slide content vertically */
+  justify-content: center; /* Aligns slide content horizontally */
+  margin: 0 10px; /* Margin between slides */
 }
 
 .carousel-slide img {
-    max-width: 200px;
-    border: 3px solid #6E44FF; /* Adjust if needed */
+  max-width: 200px;
+  border: 3px solid #6e44ff; /* Adjust if needed */
 }
 
 .button {
-    margin-top: 10px; /* Space between the image and the button */
+  margin-top: 10px; /* Space between the image and the button */
 }
 
-
 .button {
-    background-color: #6E44FF; /* Extracted from your logo */
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: inline-block;
-    margin-top: 10px;
+  background-color: #6e44ff; /* Extracted from your logo */
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 10px;
 }
 
 .cta-button {
-    background-color: #6E44FF; /* Extracted from your logo */
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: inline-block;
-    margin-top: 20px;
+  background-color: #6e44ff; /* Extracted from your logo */
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
+  margin-top: 20px;
 }
 
-
 #products {
-    background-color: #f4f4f4; /* Light grey background */
-    padding: 50px 0;
-    text-align: center;
+  background-color: #f4f4f4; /* Light grey background */
+  padding: 50px 0;
+  text-align: center;
 }
 
 #products .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 #products h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
 }
 
 .product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
 }
 
 .product-item {
-    background-color: #ffffff; /* White background for each item */
-    border: 1px solid #ddd; /* Light border for the grid items */
-    padding: 20px;
-    border-radius: 10px; /* Optional: adds rounded corners */
+  background-color: #ffffff; /* White background for each item */
+  border: 1px solid #ddd; /* Light border for the grid items */
+  padding: 20px;
+  border-radius: 10px; /* Optional: adds rounded corners */
 }
 
 .product-icon {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .product-icon img {
-    max-width: 80px; /* Adjust based on your actual icon size */
-    margin-bottom: 10px;
+  max-width: 80px; /* Adjust based on your actual icon size */
+  margin-bottom: 10px;
 }
 
 .product-item h3 {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
 }
 
 .product-item p {
-    font-size: 1rem;
-    color: #666;
-    line-height: 1.6;
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
 }
 
 /* Responsive grid adjustments */
 
 /* Hero Section */
 .hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 100px; /* Adjust padding as needed */
-    background-color: #E5E5E5; /* Light grey background */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px; /* Adjust padding as needed */
+  background-color: #e5e5e5; /* Light grey background */
 }
 
 .hero-content h1 {
-    font-size: 2.5rem;
-    color: #333; /* Adjust color based on your design */
-    margin-bottom: 20px;
+  font-size: 2.5rem;
+  color: #333; /* Adjust color based on your design */
+  margin-bottom: 20px;
 }
 
 .hero-content p {
-    font-size: 1.2rem;
-    color: #666; /* Adjust color based on your design */
-    margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #666; /* Adjust color based on your design */
+  margin-bottom: 20px;
 }
 
 .hero-button {
-    /* Inherits styles from .nav-cta .button */
+  /* Inherits styles from .nav-cta .button */
 }
 
 .hero-image img {
-    max-width: 100%; /* Ensure the image is responsive */
-    height: auto;
+  max-width: 100%; /* Ensure the image is responsive */
+  height: auto;
 }
-
-
-
 
 /* Language Switcher Styles */
 /* Language Dropdown Styles */
 .language-switcher {
-    position: absolute;
-    top: 10px;
-    right: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 #language-dropdown {
-    padding: 5px 10px;
-    background-color: #ffffff; /* White background */
-    color: #6E44FF; /* Color from your palette */
-    border: 1px solid #6E44FF; /* Same color for border */
-    border-radius: 5px;
-    outline: none; /* Removes the default focus outline */
-    -webkit-appearance: none; /* Removes default styling for Safari */
-    -moz-appearance: none; /* Removes default styling for Firefox */
-    appearance: none; /* Removes default styling */
-    cursor: pointer;
+  padding: 5px 10px;
+  background-color: #ffffff; /* White background */
+  color: #6e44ff; /* Color from your palette */
+  border: 1px solid #6e44ff; /* Same color for border */
+  border-radius: 5px;
+  outline: none; /* Removes the default focus outline */
+  -webkit-appearance: none; /* Removes default styling for Safari */
+  -moz-appearance: none; /* Removes default styling for Firefox */
+  appearance: none; /* Removes default styling */
+  cursor: pointer;
 }
 
 /* Adding a custom arrow indicator */
 .language-switcher:after {
-    /* content: '▼'; Arrow character */
-    position: absolute;
-    right: 15px;
-    top: 14px;
-    color: #6E44FF;
-    pointer-events: none; /* Makes sure clicks on the arrow act like clicks on the select element */
+  /* content: '▼'; Arrow character */
+  position: absolute;
+  right: 15px;
+  top: 14px;
+  color: #6e44ff;
+  pointer-events: none; /* Makes sure clicks on the arrow act like clicks on the select element */
 }
 
 /* Hide arrow for IE10+ */
 #language-dropdown::-ms-expand {
-    display: none;
+  display: none;
 }
 
 /* Focus styles for the dropdown */
 #language-dropdown:focus {
-    border-color: #5543cc; /* Darker shade for focus */
+  border-color: #5543cc; /* Darker shade for focus */
 }
 
-
 #image-carousel {
-    margin: 0;
-    padding: 20px 0;
-    background-color: #f4f4f4; /* Light grey background for the carousel section */
-  }
-  
-  .carousel-container {
-    display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-  }
-  
-  .carousel-slide {
-    flex: 0 0 auto;
-    width: 100%; /* Adjust width to fit your design */
-    position: relative;
-    padding: 10px;
-  }
-  
-  .carousel-slide img {
-    width: 100%;
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Optional: if you want rounded corners for images */
-  }
-  
-  /* Team Section Styles */
-  #team {
-    background-color: #fff;
-    padding: 50px 0;
-  }
-  
-  .team-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three columns layout */
-    grid-gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .team-member {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .member-photo {
-    width: 150px; /* Adjust as needed */
-    height: 150px; /* Adjust as needed */
-    background-size: cover;
-    background-position: center;
-    border-radius: 50%; /* Circular photos */
-    margin: 0 auto 20px; /* Center the photo and add space below */
-  }
-  
-  .team-member h3 {
-    margin-bottom: 5px;
-    color: #333;
-  }
-  
-  .team-member p {
-    color: #666;
-    font-size: 0.9rem;
-  }
-  
+  margin: 0;
+  padding: 20px 0;
+  background-color: #f4f4f4; /* Light grey background for the carousel section */
+}
+
+.carousel-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.carousel-slide {
+  flex: 0 0 auto;
+  width: 100%; /* Adjust width to fit your design */
+  position: relative;
+  padding: 10px;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: if you want rounded corners for images */
+}
+
+/* Team Section Styles */
+#team {
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns layout */
+  grid-gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.team-member {
+  text-align: center;
+  padding: 20px;
+}
+
+.member-photo {
+  width: 150px; /* Adjust as needed */
+  height: 150px; /* Adjust as needed */
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto 20px; /* Center the photo and add space below */
+}
+
+.team-member h3 {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.team-member p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
 /* Add responsive styles as needed */
 @media (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    .hero-image {
-        order: -1; /* Image above the text on mobile */
-        margin-bottom: 20px;
-    }
+  .hero-image {
+    order: -1; /* Image above the text on mobile */
+    margin-bottom: 20px;
+  }
 
-    .nav-container {
-        flex-direction: column;
-    }
+  .nav-container {
+    flex-direction: column;
+  }
 
-    .nav-links {
-        flex-direction: column;
-        margin-top: 10px;
-    }
+  .nav-links {
+    flex-direction: column;
+    margin-top: 10px;
+  }
 
-    .nav-links li {
-        margin: 10px 0;
-    }
+  .nav-links li {
+    margin: 10px 0;
+  }
 
-    .team-grid {
-        grid-template-columns: 1fr 1fr; /* Two columns layout for smaller screens */
-      }
+  .team-grid {
+    grid-template-columns: 1fr 1fr; /* Two columns layout for smaller screens */
+  }
 }
