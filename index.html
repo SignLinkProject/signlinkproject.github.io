@@ -1,52 +1,124 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>SignLink - Your Edtech Solution</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <!-- Add any other meta tags, fonts, or head content here -->
-</head>
-<body>
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <header>
+      <img src="assets/logo.png" alt="SignLink Logo" />
+      <h1>Welcome to SignLink</h1>
+      <p>Your Gateway to Enhanced Learning</p>
+      <a href="#products" class="cta-button">Explore Our Products</a>
+    </header>
 
     <!-- Header - Hero Section -->
     <header>
-        <img src="assets/logo.png" alt="SignLink Logo">
-        <h1>Welcome to SignLink</h1>
-        <p>Your Gateway to Enhanced Learning</p>
-        <a href="#contact" class="cta-button">Get in Touch</a>
+      <img src="assets/logo.png" alt="SignLink Logo" />
+      <h1>Welcome to SignLink</h1>
+      <p>Your Gateway to Enhanced Learning</p>
+      <a href="#contact" class="cta-button">Get in Touch</a>
     </header>
 
-    <!-- ... other sections ... -->
+    <!-- Horizontal Menu -->
+    <nav>
+      <ul class="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    
+    <!-- Product - Product Section -->
+
+    <section id="products">
+        <div class="container">
+            <h2>What You Will Learn</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <div class="product-icon"><img src="assets/programming-icon.png" alt="Programming Skills"></div>
+                    <h3>Programming Skills</h3>
+                    <p>Learn: the most used programming language (Python) to a professional level...</p>
+                </div>
+                <div class="product-item">
+                    <div class="product-icon"><img src="assets/computer-vision-icon.png" alt="Computer Vision"></div>
+                    <h3>Computer Vision</h3>
+                    <p>Learn how to make machines learn to classify images...</p>
+                </div>
+                <div class="product-item">
+                    <div class="product-icon"><img src="assets/machine-learning-icon.png" alt="Machine Learning"></div>
+                    <h3>Machine Learning</h3>
+                    <p>Learn cutting-edge technology such as deep learning...</p>
+                </div>
+                <div class="product-item">
+                    <div class="product-icon"><img src="assets/nlp-icon.png" alt="Natural Language Processing"></div>
+                    <h3>Natural Language Processing</h3>
+                    <p>Make use of recent techniques (Word2Vec, Transformers, etc)...</p>
+                </div>
+                <!-- More items as needed -->
+            </div>
+        </div>
+    </section>
+    
 
     <!-- Media Section -->
     <section id="media">
-        <h2>As Featured In</h2>
-        <div class="carousel">
-            <div class="carousel-slide">
-                <img src="assets/media-logo1.png" alt="Media Logo 1">
-                <a href="link-to-article-1" class="button">Read Article</a>
-            </div>
-            <div class="carousel-slide">
-                <img src="assets/media-logo2.png" alt="Media Logo 2">
-                <a href="link-to-article-2" class="button">Read Article</a>
-            </div>
-            <!-- More slides as needed -->
+      <h2>As Featured In</h2>
+      <div class="carousel">
+        <div class="carousel-slide">
+          <img src="assets/media-logo1.png" alt="Media Logo 1" />
+          <a href="link-to-article-1" class="button">Read Article</a>
         </div>
+        <div class="carousel-slide">
+          <img src="assets/media-logo2.png" alt="Media Logo 2" />
+          <a href="link-to-article-2" class="button">Read Article</a>
+        </div>
+        <!-- More slides as needed -->
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Us</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+        bibendum laoreet.
+      </p>
     </section>
 
     <!-- Awards Section -->
     <section id="awards">
-        <h2>Our Awards</h2>
-        <div class="carousel">
-            <!-- Repeat the structure as in the Media section for each award -->
-        </div>
+      <h2>Our Awards</h2>
+      <div class="carousel">
+        <!-- Repeat the structure as in the Media section for each award -->
+      </div>
     </section>
 
-    <!-- ... other sections ... -->
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form action="submit-form-url" method="post">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
 
+    <!-- Footer -->
     <footer>
-        <!-- Footer content -->
+      <p>&copy; 2023 SignLink. All Rights Reserved.</p>
+      <p>
+        Follow us on: <a href="#">Facebook</a> | <a href="#">Twitter</a> |
+        <a href="#">LinkedIn</a>
+      </p>
     </footer>
 
-    <script src="script.js"></script> <!-- If you use JavaScript for the carousel -->
-</body>
+    <script src="script.js"></script>
+    <!-- If you use JavaScript for the carousel -->
+  </body>
 </html>
