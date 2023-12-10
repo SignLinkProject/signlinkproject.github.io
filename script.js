@@ -1,29 +1,39 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const carousel = document.querySelector('.carousel');
-    const slides = Array.from(carousel.children);
-    const nextButton = document.querySelector('.right-arrow');
-    const prevButton = document.querySelector('.left-arrow');
-    const slideWidth = slides[0].getBoundingClientRect().width;
-  
-    let currentSlideIndex = 0;
-  
-    function updateCarousel() {
-      const newTransform = -currentSlideIndex * (slideWidth + 20); // 20 is the total margin between slides
-      carousel.style.transform = `translateX(${newTransform}px)`;
-      prevButton.disabled = currentSlideIndex === 0;
-      nextButton.disabled = currentSlideIndex === slides.length - 2; // -2 as we show 2 slides at a time
+document.addEventListener("DOMContentLoaded", function () {
+  const carousel = document.querySelector(".carousel");
+  const slides = Array.from(carousel.children);
+  const nextButton = document.querySelector(".right-arrow");
+  const prevButton = document.querySelector(".left-arrow");
+
+  let slideIndex = 0; // Current slide index
+
+  // Function to move the carousel
+  function moveCarousel(newIndex) {
+    const distance = newIndex * -100; // Assuming each slide takes 100% of the carousel container width
+    carousel.style.transform = `translateX(${distance}%)`;
+    slideIndex = newIndex; // Update the current slide index
+  }
+
+  // Next button click event
+  nextButton.addEventListener("click", () => {
+    if (slideIndex < slides.length - 2) {
+      // -2 because we are showing 2 slides at a time
+      moveCarousel(slideIndex + 2);
     }
-  
-    nextButton.addEventListener('click', () => {
-      currentSlideIndex += 2;
-      updateCarousel();
-    });
-  
-    prevButton.addEventListener('click', () => {
-      currentSlideIndex -= 2;
-      updateCarousel();
-    });
-  
-    updateCarousel();
   });
-  
+
+  // Previous button click event
+  prevButton.addEventListener("click", () => {
+    if (slideIndex > 0) {
+      moveCarousel(slideIndex - 2);
+    }
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const sandwichButton = document.querySelector(".sandwich-menu");
+  const menu = document.querySelector(".menu");
+
+  sandwichButton.addEventListener("click", function () {
+    menu.classList.toggle("open");
+  });
+});

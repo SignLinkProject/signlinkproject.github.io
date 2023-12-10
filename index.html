@@ -55,13 +55,20 @@
     </header>
 
     <!-- Horizontal Menu -->
+
     <nav>
+      <div class="nav-logo">
+        <a href="#home">
+          <img src="assets/logo.png" alt="Your Logo" />
+        </a>
+      </div>
+      <button class="sandwich-menu" aria-label="Open Menu">&#9776;</button>
       <ul class="menu">
-        <li><a href="#about">About</a></li>
-        <li><a href="#products">Features</a></li>
         <li><a href="#awards">Awards</a></li>
+        <li><a href="#products">The Product</a></li>
         <li><a href="#media">Media</a></li>
         <li><a href="#team">Team</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
         <li>
           <div class="language-switcher">
@@ -79,22 +86,35 @@
       </ul>
     </nav>
 
-    <!-- Images of the Team at the hackatho -->
-    <section id="image-carousel">
-      <div class="carousel-container">
-        <!-- Slides for images -->
-        <div class="carousel-slide">
-          <img src="assets/team-image1.jpg" alt="Team Member 1" />
+    <!-- Awards Section -->
+    <section id="awards">
+      <h2>Our Awards</h2>
+      <div class="awards-grid">
+        <div class="award-card">
+          <div class="product-icon">
+            <img src="assets/awards/santander.jpg" alt="Media Logo 1" />
+          </div>
+          <h3>1st Place at German Brazilian EdTech Hackathon 🥇</h3>
+          <p>
+            We're proud to have been recognized as the top innovators in the
+            German Brazilian EdTech space, showcasing our commitment to
+            educational technology.
+          </p>
         </div>
-        <div class="carousel-slide">
-          <img src="assets/team-image2.jpg" alt="Team Member 2" />
+        <div class="award-card">
+          <div class="product-icon">
+            <img src="assets/awards/edtech.png" alt="Media Logo 1" />
+          </div>
+          <h3>2nd Place on Santander Awards - University 2023 🥈</h3>
+          <p>
+            Our innovative approach to learning has been awarded the second
+            place at the prestigious Santander University Awards 2023.
+          </p>
         </div>
-        <!-- Add more slides for additional team images -->
       </div>
     </section>
 
     <!-- Product - Product Section -->
-
     <section id="products">
       <div class="container">
         <h2>Features</h2>
@@ -147,23 +167,39 @@
     </section>
 
     <!-- Media Section -->
-    <!-- Media Section -->
     <section id="media">
       <h2>As Featured In</h2>
-      <div class="carousel-container">
-        <button class="carousel-arrow left-arrow">&lt;</button>
-        <div class="carousel">
-          <div class="carousel-slide">
-            <img src="assets/media/media-logo1.png" alt="Media Logo 1" />
-            <a href="link-to-article-1" class="button">Read Article</a>
+
+      <div class="container">
+        <div class="product-grid">
+          <div class="product-item">
+            <div class="product-icon">
+              <img src="assets/media/media-logo1.png" alt="Media Logo 1" />
+            </div>
+            <h3>University of São Paulo Press</h3>
+            <p>Learn how to make machines learn to classify images...</p>
+            <a
+              href="https://jornal.usp.br/diversidade/estudantes-da-usp-conquistam-premio-com-aplicativo-que-estimula-aprendizado-de-linguas-de-sinais/"
+              class="button"
+              >Read Article</a
+            >
           </div>
-          <div class="carousel-slide">
-            <img src="assets/media/media-logo2.png" alt="Media Logo 2" />
-            <a href="link-to-article-2" class="button">Read Article</a>
+
+          <div class="product-item">
+            <div class="product-icon">
+              <img src="assets/media/media-logo2.png" alt="Media Logo 2" />
+            </div>
+            <h3>Freie Universität Berlin Press</h3>
+            <p>Learn how to make machines learn to classify images...</p>
+            <a
+              href="https://www.fu-berlin.de/en/sites/brazil/ueberuns/news/20230606-2edtechhack.html"
+              class="button"
+              >Read Article</a
+            >
           </div>
-          <!-- More slides as needed -->
+
+          <!-- More items as needed -->
         </div>
-        <button class="carousel-arrow right-arrow">&gt;</button>
       </div>
     </section>
 
@@ -174,14 +210,6 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
         bibendum laoreet.
       </p>
-    </section>
-
-    <!-- Awards Section -->
-    <section id="awards">
-      <h2>Our Awards</h2>
-      <div class="carousel">
-        <!-- Repeat the structure as in the Media section for each award -->
-      </div>
     </section>
 
     <!-- Team Section -->

@@ -5,10 +5,6 @@
   box-sizing: border-box;
 }
 
-h2 {
-  font-size: 2.5rem;
-}
-
 body {
   font-family: "Arial", sans-serif;
   line-height: 1.6;
@@ -28,7 +24,6 @@ header img {
   margin-bottom: 1em;
 }
 
-/* Horizontal Menu */ /* Horizontal Menu */
 /* Horizontal Menu */
 nav {
   background-color: #6e44ff;
@@ -37,103 +32,27 @@ nav {
   width: 100%;
   top: 0;
   z-index: 1000;
-  display: flex;
-  justify-content: center; /* Centralize the nav content */
-  align-items: center;
-  padding: 0 20px;
 }
 
-/* Logo */
-.nav-logo {
-  position: absolute;
-  left: 20px; /* Adjust as necessary */
-}
-
-.nav-logo img {
-  max-width: 50px;
-}
-
-/* Sandwich Menu */
-.sandwich-menu {
-  display: none;
-  /* Styles for the sandwich menu icon */
-}
-
-/* Menu list centralized with flex */
 .menu {
   list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: center; /* Centralize the list items */
-  padding: 0;
-  margin: 0;
-  width: 45%; /* Ensure the list takes up the full width of the nav */
+  text-align: center;
+  padding: 10px 0;
 }
 
-/* Menu items */
 .menu li {
-  padding: 10px;
-  margin: 0 5px; /* Adjust spacing between menu items */
+  display: inline;
+  margin-right: 20px;
 }
 
-/* Except for the language selector */
-.menu li:not(.language-switcher) {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-/* Menu link styles */
 .menu a {
   color: white;
   text-decoration: none;
-  padding: 10px;
-  display: block;
+  padding: 5px 10px;
 }
 
-/* Hover effect */
-.menu a:hover,
-.menu a:focus {
+.menu a:hover {
   background-color: #5543cc;
-  border-radius: 5px;
-}
-
-/* Language selector pushed to the right */
-.language-switcher {
-  margin-left: auto; /* Pushes the language selector to the right */
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-  .nav-logo {
-    position: static;
-    transform: none;
-    margin-right: 20px;
-  }
-
-  .sandwich-menu {
-    display: block;
-  }
-
-  .menu {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px; /* Below the nav bar */
-    left: 0;
-    background-color: #6e44ff;
-  }
-
-  .menu.open {
-    display: flex;
-  }
-}
-
-/* Additional styles for the language switcher to make it look good on mobile */
-@media (max-width: 768px) {
-  .language-switcher {
-    order: 1; /* Makes sure language switcher is last */
-    padding-top: 10px; /* Adds space on top */
-  }
 }
 
 /* General Section Style */
@@ -171,6 +90,7 @@ footer {
   color: white;
   text-align: center;
   padding: 1em 0;
+  margin-top: 1em;
 }
 
 footer a {
@@ -188,17 +108,8 @@ footer a:hover {
   position: relative;
   overflow: hidden;
   margin: 0 auto;
-  /* The width should be wide enough to fit two slides plus the margin/padding */
-  max-width: calc((250px * 2) + (slideMargin * 4));
+  max-width: 400px; /* Adjust the width to fit two items */
 }
-
-/* Ensure 250px matches the width of your actual slides */
-.carousel-slide {
-  min-width: 250px; /* This width should be set to fit two slides within max-width of .carousel-container */
-  margin-right: 250px; /* Adjust slideMargin to fit your design */
-}
-
-/* Rest of your CSS */
 
 /* Carousel Styles */
 .carousel {
@@ -206,8 +117,14 @@ footer a:hover {
   transition: transform 0.3s ease-in-out;
 }
 
+.carousel-slide {
+  min-width: 50%; /* Ensures only two items show before pagination */
+  box-sizing: border-box;
+  padding: 0 10px; /* Spacing between slides */
+}
+
 .carousel-slide img {
-  width: 250px;
+  width: 100%;
   border: 3px solid #6e44ff;
 }
 
@@ -216,7 +133,7 @@ footer a:hover {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #6e44ff;
+  background-color: #6E44FF;
   color: white;
   border: none;
   padding: 10px;
@@ -230,6 +147,7 @@ footer a:hover {
 .right-arrow {
   right: 0;
 }
+
 
 .button {
   margin-top: 10px; /* Space between the image and the button */
@@ -304,17 +222,7 @@ footer a:hover {
   line-height: 1.6;
 }
 
-/* FEatures Section Styles */
-#media {
-  background-color: #6e44ff; /* Light grey background */
-  padding: 50px;
-  text-align: center;
-}
-
-#media h2 {
-  color: #ffffff;
-  margin-bottom: 2rem;
-}
+/* Responsive grid adjustments */
 
 /* Hero Section */
 .hero {
@@ -406,6 +314,12 @@ footer a:hover {
   padding: 10px;
 }
 
+.carousel-slide img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: if you want rounded corners for images */
+}
+
 /* Team Section Styles */
 #team {
   background-color: #fff;
@@ -471,69 +385,4 @@ footer a:hover {
   .team-grid {
     grid-template-columns: 1fr 1fr; /* Two columns layout for smaller screens */
   }
-}
-
-#about {
-  background-color: #e5e5e5; /* Light grey background */
-}
-
-#contact {
-  background-color: #e5e5e5; /* Light grey background */
-}
-
-
-/* Awards Section Styles */
-/* Awards Section Styles */
-#awards {
-  text-align: center;
-  padding: 50px 0;
-  background: #f9f9f9; /* Optional: changes the background of the entire awards section */
-}
-
-.awards-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two-column layout for larger screens */
-  gap: 20px; /* Spacing between cards */
-  justify-content: center;
-  align-items: center;
-  max-width: 960px; /* Maximum width of the grid */
-  margin: auto;
-}
-
-.award-card {
-  background-color: #ffffff; /* White background for each card */
-  border: 1px solid #ddd; /* Light border for the card */
-  border-radius: 8px; /* Rounded corners for the card */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  padding: 20px;
-  transition: transform 0.3s ease; /* Smooth transition for hover effect */
-}
-
-.award-card:hover {
-  transform: translateY(-5px); /* Slight raise effect on hover */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
-}
-
-.award-card h3 {
-  margin: 16px 0;
-  font-size: 1.2rem;
-  color: #333; /* Dark text for contrast */
-}
-
-.award-card p {
-  font-size: 1rem;
-  color: #666; /* Lighter text for the description */
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .awards-grid {
-    grid-template-columns: 1fr; /* Single column layout for smaller screens */
-    padding: 0 20px; /* Padding on the sides */
-  }
-}
-
-#awards img {
-  max-width: 300px;
-  height: auto;
 }
