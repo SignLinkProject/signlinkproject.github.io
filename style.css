@@ -172,16 +172,93 @@ footer {
   color: white;
   text-align: center;
   padding: 1em 0;
+  display: flex;
+  justify-content: space-between; /* Align items to the sides */
+  align-items: center;
+  flex-wrap: wrap; /* Wrap items on smaller screens */
 }
 
-footer a {
+.footer-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-logo img {
+  max-width: 150px; /* Adjust the size as necessary */
+}
+
+.footer-nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* This ensures the nav is displayed */
+  flex-wrap: wrap;
+}
+
+.footer-nav li {
+  padding: 0 10px; /* Adjust the spacing as needed */
+}
+
+.footer-nav a {
   color: #6e44ff;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-footer a:hover {
+.footer-nav a:hover {
+  color: #ffffff;
   text-decoration: underline;
 }
+
+.footer-social {
+  margin: 10px 0;
+}
+
+.footer-social p {
+  font-size: 0.9em;
+}
+
+.footer-social a {
+  color: #6e44ff;
+  padding: 0 5px;
+}
+
+.footer-rights {
+  font-size: 0.8em;
+  text-align: center;
+  width: 100%; /* Full width */
+  margin-top: 10px;
+}
+
+/* Responsive adjustments for the footer */
+@media (max-width: 768px) {
+  .footer-content {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-logo,
+  .footer-nav,
+  .footer-social,
+  .footer-rights {
+    margin-bottom: 10px;
+  }
+
+  .footer-nav ul {
+    justify-content: center;
+  }
+
+  .footer-nav li {
+    padding: 5px;
+  }
+}
+
+
 
 /* Carousel, Button, and other styles remain the same */
 /* Carousel Container Styles */
