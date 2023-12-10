@@ -41,6 +41,7 @@ nav {
   justify-content: center; /* Centralize the nav content */
   align-items: center;
   padding: 0 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Adds a shadow to the bottom of the nav bar */
 }
 
 /* Logo */
@@ -277,19 +278,20 @@ footer a:hover {
 }
 
 .product-item {
-  background-color: #ffffff; /* White background for each item */
-  border: 1px solid #ddd; /* Light border for the grid items */
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
   padding: 20px;
-  border-radius: 10px; /* Optional: adds rounded corners */
+  text-align: center; /* Centering text inside the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
 }
-
 .product-icon {
   margin-bottom: 15px;
 }
 
 .product-icon img {
-  max-width: 80px; /* Adjust based on your actual icon size */
-  margin-bottom: 10px;
+  max-width: 150px; /* Making sure image fits the card */
+  margin-bottom: 10px; /* Space between image and text */
 }
 
 .product-item h3 {
@@ -323,6 +325,19 @@ footer a:hover {
   align-items: center;
   padding: 100px; /* Adjust padding as needed */
   background-color: #e5e5e5; /* Light grey background */
+}
+
+.sdgs {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5e5e5; /* Light grey background */
+}
+
+.sdgs img {
+  max-width: 100px;
+  margin: 0 10px;
 }
 
 .hero-content h1 {
@@ -471,16 +486,125 @@ footer a:hover {
   .team-grid {
     grid-template-columns: 1fr 1fr; /* Two columns layout for smaller screens */
   }
+
+  .product-grid {
+    grid-template-columns: 1fr; /* Single column layout for smaller screens */
+  }
 }
 
 #about {
-  background-color: #e5e5e5; /* Light grey background */
+  background-color: #f4f4f4;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.about-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-card {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+}
+
+.about-card h3 {
+  color: #6e44ff;
+  margin-bottom: 16px;
+}
+
+.about-card p,
+.about-card ul {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.about-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-card li strong {
+  color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 #contact {
-  background-color: #e5e5e5; /* Light grey background */
+  background-color: #e5e5e5; /* White background */
+  padding: 50px 0;
 }
 
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns layout */
+  gap: 20px;
+  max-width: 1200px; /* Or your preferred maximum width */
+  margin: auto;
+}
+
+.contact-form,
+.contact-details {
+  padding: 20px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 10px; /* Spacing between form fields */
+  padding: 10px;
+  border: 1px solid #ddd; /* Light border for input fields */
+}
+
+.contact-form button {
+  background-color: #6e44ff; /* Purple background to match your theme */
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-details p,
+.contact-details .google-maps {
+  margin-bottom: 20px; /* Spacing between contact details and the map */
+}
+
+.contact-details .google-maps iframe {
+  width: 100%; /* Full width of the container */
+  height: 300px; /* Adjust height as necessary */
+  border: none; /* Removes default border */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr; /* Single column layout for smaller screens */
+  }
+}
 
 /* Awards Section Styles */
 /* Awards Section Styles */
@@ -492,7 +616,10 @@ footer a:hover {
 
 .awards-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two-column layout for larger screens */
+  grid-template-columns: repeat(
+    2,
+    1fr
+  ); /* Two-column layout for larger screens */
   gap: 20px; /* Spacing between cards */
   justify-content: center;
   align-items: center;
@@ -534,6 +661,6 @@ footer a:hover {
 }
 
 #awards img {
-  max-width: 300px;
+  max-width: 200px;
   height: auto;
 }

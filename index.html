@@ -50,7 +50,11 @@
       <div class="hero-content">
         <h1>Linking the World - Sign By Sign</h1>
         <p>Learn Multiple Sign Languages, Connect to the Industry.</p>
-        <a href="#apply" class="button hero-button">Apply now!</a>
+
+        <div class="sdgs">
+          <img src="assets/SDG4.png" alt="SDG 4" />
+          <img src="assets/SDG10.png" alt="SDG 10" />
+        </div>
       </div>
     </header>
 
@@ -65,10 +69,10 @@
       <button class="sandwich-menu" aria-label="Open Menu">&#9776;</button>
       <ul class="menu">
         <li><a href="#awards">Awards</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#products">The Product</a></li>
         <li><a href="#media">Media</a></li>
         <li><a href="#team">Team</a></li>
-        <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
         <li>
           <div class="language-switcher">
@@ -92,7 +96,7 @@
       <div class="awards-grid">
         <div class="award-card">
           <div class="product-icon">
-            <img src="assets/awards/santander.jpg" alt="Media Logo 1" />
+            <img src="assets/awards/edtech.png" alt="Media Logo 1" />
           </div>
           <h3>1st Place at German Brazilian EdTech Hackathon 🥇</h3>
           <p>
@@ -103,7 +107,7 @@
         </div>
         <div class="award-card">
           <div class="product-icon">
-            <img src="assets/awards/edtech.png" alt="Media Logo 1" />
+            <img src="assets/awards/santander.jpg" alt="Media Logo 1" />
           </div>
           <h3>2nd Place on Santander Awards - University 2023 🥈</h3>
           <p>
@@ -114,51 +118,111 @@
       </div>
     </section>
 
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Us</h2>
+
+      <div class="about-container">
+        <div class="about-card">
+          <div class="about-header">
+            <div class="product-icon">
+              <img src="assets/features/problem.png" alt="Media Logo 1" />
+            </div>
+          </div>
+          <h3>The Problem</h3>
+
+          <ul>
+            <li>
+              <strong>Lack of Preparedness:</strong>
+              In creating suitable vacancies for deaf people with disabilities
+              in the selection processes.
+            </li>
+            <li>
+              <strong>Poor Inclusion:</strong>
+              HR teams unprepared to recruit and integrate deaf employees.
+            </li>
+            <li>
+              <strong>International Barriers:</strong>
+              Difficulties in the relocation of deaf people with disabilities
+              due to a lack of training in foreign sign languages.
+            </li>
+          </ul>
+        </div>
+
+        <div class="about-card">
+          <div class="about-header">
+            <div class="product-icon">
+              <img src="assets/features/solution.png" alt="Media Logo 1" />
+            </div>
+          </div>
+          <h3>Our Solution</h3>
+          <ul>
+            <li>
+              <strong>01. Meet your company's inclusion goals:</strong>
+              Ensure that your company meets inclusion goals efficiently and
+              effectively.
+            </li>
+            <li>
+              <strong
+                >02. Train talents in sign languages from around the
+                world:</strong
+              >
+              Provide training in various sign languages, empowering talents for
+              global communication.
+            </li>
+            <li>
+              <strong>03. Facilitate work opportunities abroad:</strong>
+              Remove barriers for the relocation of deaf people with
+              disabilities, opening doors to international opportunities.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
     <!-- Product - Product Section -->
     <section id="products">
       <div class="container">
-        <h2>Features</h2>
+        <h2>Our Strategy</h2>
         <div class="product-grid">
           <div class="product-item">
             <div class="product-icon">
-              <img src="assets/programming-icon.png" alt="Programming Skills" />
+              <!-- Image placeholder for HR Management Platform -->
+              <img
+                src="assets/features/first.png"
+                alt="HR Management Platform"
+              />
             </div>
-            <h3>Programming Skills</h3>
+            <h3>HR Management Platform</h3>
             <p>
-              Learn: the most used programming language (Python) to a
-              professional level...
+              Track the progress of deaf talents in adapting to new
+              organizational units, ensuring a smooth and successful transition
+              within companies.
             </p>
           </div>
           <div class="product-item">
             <div class="product-icon">
+              <!-- Image placeholder for International Matchmaking -->
               <img
-                src="assets/computer-vision-icon.png"
-                alt="Computer Vision"
+                src="assets/features/second.png"
+                alt="International Matchmaking"
               />
             </div>
-            <h3>Computer Vision</h3>
-            <p>Learn how to make machines learn to classify images...</p>
-          </div>
-          <div class="product-item">
-            <div class="product-icon">
-              <img
-                src="assets/machine-learning-icon.png"
-                alt="Machine Learning"
-              />
-            </div>
-            <h3>Machine Learning</h3>
-            <p>Learn cutting-edge technology such as deep learning...</p>
-          </div>
-          <div class="product-item">
-            <div class="product-icon">
-              <img
-                src="assets/nlp-icon.png"
-                alt="Natural Language Processing"
-              />
-            </div>
-            <h3>Natural Language Processing</h3>
+            <h3>International Matchmaking</h3>
             <p>
-              Make use of recent techniques (Word2Vec, Transformers, etc)...
+              Connects deaf individuals globally, offering a sign language
+              learning tool with a practical library of GIFs.
+            </p>
+          </div>
+          <div class="product-item">
+            <div class="product-icon">
+              <!-- Image placeholder for Learning Path -->
+              <img src="assets/features/third.png" alt="Learning Path" />
+            </div>
+            <h3>Learning Path</h3>
+            <p>
+              A gamified journey empowers deaf talents in new sign languages,
+              preparing them for challenges in foreign markets.
             </p>
           </div>
           <!-- More items as needed -->
@@ -177,10 +241,14 @@
               <img src="assets/media/media-logo1.png" alt="Media Logo 1" />
             </div>
             <h3>University of São Paulo Press</h3>
-            <p>Learn how to make machines learn to classify images...</p>
+            <p>
+              USP students win award with app that encourages sign language
+              learning
+            </p>
             <a
               href="https://jornal.usp.br/diversidade/estudantes-da-usp-conquistam-premio-com-aplicativo-que-estimula-aprendizado-de-linguas-de-sinais/"
               class="button"
+              target="_blank"
               >Read Article</a
             >
           </div>
@@ -190,7 +258,10 @@
               <img src="assets/media/media-logo2.png" alt="Media Logo 2" />
             </div>
             <h3>Freie Universität Berlin Press</h3>
-            <p>Learn how to make machines learn to classify images...</p>
+            <p>
+              Second edition of German-Brazilian EdTech Hackathon awards app for
+              learning sign languages
+            </p>
             <a
               href="https://www.fu-berlin.de/en/sites/brazil/ueberuns/news/20230606-2edtechhack.html"
               class="button"
@@ -198,18 +269,46 @@
             >
           </div>
 
+          <div class="product-item">
+            <div class="product-icon">
+              <img src="assets/media/ufjf.png" alt="Media Logo 2" />
+            </div>
+            <h3>Juiz de Fora Federal University Press</h3>
+            <p>
+              Second edition of German-Brazilian EdTech Hackathon awards app for
+              learning sign languages
+            </p>
+            <a
+              href="https://www2.ufjf.br/noticias/2023/06/15/aluno-de-design-integra-equipe-vencedora-do-german-brazilian-edtech-hackathon/"
+              class="button"
+              target="_blank"
+              >Read Article</a
+            >
+          </div>
+
+          <div class="product-item">
+            <div class="product-icon">
+              <img src="assets/media/ipol.jpg" alt="Media Logo 2" />
+            </div>
+            <h3>
+              IPOL - Instituto de Investigação e Desenvolvimento em Política
+              Linguística
+            </h3>
+            <p>
+              Brazilian app that encourages learning sign language wins
+              international award
+            </p>
+            <a
+              href="http://ipol.org.br/app-brasileiro-que-estimula-aprendizado-da-lingua-de-sinais-ganha-premio-internacional/"
+              class="button"
+              target="_blank"
+              >Read Article</a
+            >
+          </div>
+
           <!-- More items as needed -->
         </div>
       </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-      <h2>About Us</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
-        bibendum laoreet.
-      </p>
     </section>
 
     <!-- Team Section -->
@@ -283,12 +382,41 @@
     <!-- Contact Section -->
     <section id="contact">
       <h2>Contact Us</h2>
-      <form action="submit-form-url" method="post">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+      <div class="contact-grid">
+        <!-- Contact Form Column -->
+        <div class="contact-form">
+          <form action="submit-form-url" method="post">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+        <!-- Contact Details Column -->
+        <div class="contact-details">
+          <p>
+            Email:
+            <a href="mailto:signlinkproject@gmail.com"
+              >signlinkproject@gmail.com</a
+            >
+          </p>
+          <!-- Embed Google Maps -->
+          <!-- <div class="google-maps">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.179224392149!2d-47.89366518494601!3d-22.008712785965085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9c7a3c78673a1%3A0x4b0f7624eb1a0e91!2sUniversidade%20de%20S%C3%A3o%20Paulo%20-%20USP%20S%C3%A3o%20Carlos!5e0!3m2!1sen!2sbr!4v1666285569014!5m2!1sen!2sbr"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div> -->
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
@@ -303,6 +431,15 @@
     </footer>
 
     <script src="script.js"></script>
-    <!-- If you use JavaScript for the carousel -->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
   </body>
 </html>
