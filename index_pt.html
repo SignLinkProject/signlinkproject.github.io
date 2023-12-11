@@ -1,22 +1,480 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Work in Progress</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="SignLink - Sua Solução Edtech para aprender e conectar através da linguagem de sinais."
+    />
+    <meta
+      name="keywords"
+      content="SignLink, Edtech, Linguagem de Sinais, Educação, Tecnologia, Aprendizado"
+    />
+    <meta name="author" content="SignLink" />
+
+    <!-- Open Graph tags for social media sharing -->
+    <meta property="og:title" content="SignLink - Sua Solução Edtech" />
+    <meta
+      property="og:description"
+      content="Conecte-se e aprenda com nossa plataforma inovadora de linguagem de sinais."
+    />
+    <meta property="og:url" content="https://signlinkproject.github.io/" />
+    <!-- Substitua pela URL do seu site -->
+    <meta property="og:type" content="website" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
+
+    <!-- Apple Touch Icon (pelo menos 200x200px) -->
+    <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png" />
+
+    <!-- Para Tiles do Windows -->
+    <meta
+      name="msapplication-square150x150logo"
+      content="assets/favicon/ms-icon-150x150.png"
+    />
+
+    <title>SignLink - Sua Solução Edtech</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- Adicione quaisquer outras meta tags, fontes ou conteúdo de cabeçalho aqui -->
   </head>
+
   <body>
-    <div class="warning-container">
-      <div class="warning-card">
-        <a href="index.html" class="warning-logo">
-          <img src="assets/logo.png" alt="SignLink Logo" />
-        </a>
-        <h1>Trabalho em Progresso</h1>
-        <p>Esta página está em construção.</p>
+    <!-- Seção Hero -->
+    <header class="hero">
+      <div class="hero-image">
+        <img src="assets/logo.png" alt="Treinamento Tech Gym" />
       </div>
-    </div>
+      <div class="hero-content">
+        <h1>Conectando o Mundo - Sinal Por Sinal</h1>
+        <p>Aprenda Várias Linguagens de Sinais, Conecte-se à Indústria.</p>
+
+        <div class="sdgs">
+          <img
+            src="assets/SDG4.png"
+            alt="Compromisso com o Objetivo de Desenvolvimento Sustentável 4: Educação de Qualidade"
+          />
+          <img
+            src="assets/SDG10.png"
+            alt="Compromisso com o Objetivo de Desenvolvimento Sustentável 10: Redução das Desigualdades"
+          />
+        </div>
+      </div>
+    </header>
+
+    <!-- Menu Horizontal -->
+    <nav>
+      <div class="nav-logo">
+        <a href="#home">
+          <img src="assets/logo.png" alt="Seu Logo" />
+        </a>
+      </div>
+      <button class="sandwich-menu" aria-label="Abrir Menu">&#9776;</button>
+      <ul class="menu">
+        <li><a href="#awards">Prêmios</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#products">O Produto</a></li>
+        <li><a href="#media">Mídia</a></li>
+        <li><a href="#team">Equipe</a></li>
+        <li><a href="#contact">Contato</a></li>
+        <li>
+          <div class="language-switcher">
+            <select
+              id="language-dropdown"
+              name="languages"
+              onchange="location = this.value;"
+            >
+              <option value="index_pt.html">🇧🇷</option>
+              <option value="index.html">🇺🇸</option>
+              <option value="index_de.html">🇩🇪</option>
+            </select>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <!-- Seção de Vídeo -->
+    <section class="video-section">
+      <h2>Inovando desde o primeiro dia!</h2>
+      <div class="video-container">
+        <iframe
+          width="50%"
+          height="500px"
+          src="https://www.youtube.com/embed/IZgCUhx1KyY?autoplay=1&start=6186"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+    </section>
+
+    <!-- Seção de Prêmios -->
+    <section id="awards">
+      <h2>Nossos Prêmios</h2>
+      <div class="awards-grid">
+        <div class="award-card">
+          <div class="product-icon">
+            <img src="assets/awards/edtech.png" alt="Logo Mídia 1" />
+          </div>
+          <h3>1º Lugar no Hackathon EdTech Brasil-Alemanha 🥇</h3>
+          <p>
+            Estamos orgulhosos de ter sido reconhecidos como os principais
+            inovadores no espaço EdTech Brasil-Alemanha, demonstrando nosso
+            compromisso com tecnologia educacional.
+          </p>
+        </div>
+        <div class="award-card">
+          <div class="product-icon">
+            <img src="assets/awards/santander.jpg" alt="Logo Mídia 2" />
+          </div>
+          <h3>2º Lugar nos Prêmios Santander - Universidade 2023 🥈</h3>
+          <p>
+            Nossa abordagem inovadora de aprendizado foi premiada com o segundo
+            lugar nos prestigiados Prêmios da Universidade Santander 2023.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="about">
+      <h2>Sobre Nós</h2>
+
+      <div class="about-container">
+        <div class="about-card">
+          <div class="about-header">
+            <div class="product-icon">
+              <img src="assets/features/problem.png" alt="Logo Mídia 3" />
+            </div>
+          </div>
+          <h3>O Problema</h3>
+
+          <ul>
+            <li>
+              <strong>Falta de Preparo:</strong>
+              Na criação de vagas adequadas para pessoas surdas com deficiências
+              nos processos de seleção.
+            </li>
+            <li>
+              <strong>Inclusão Insuficiente:</strong>
+              Equipes de RH despreparadas para recrutar e integrar funcionários
+              surdos.
+            </li>
+            <li>
+              <strong>Barreiras Internacionais:</strong>
+              Dificuldades na realocação de pessoas surdas com deficiências
+              devido à falta de treinamento em línguas de sinais estrangeiras.
+            </li>
+          </ul>
+        </div>
+
+        <div class="about-card">
+          <div class="about-header">
+            <div class="product-icon">
+              <img src="assets/features/solution.png" alt="Logo Mídia 4" />
+            </div>
+          </div>
+          <h3>Nossa Solução</h3>
+          <ul>
+            <li>
+              <strong
+                >01. Atenda aos objetivos de inclusão da sua empresa:</strong
+              >
+              Garanta que sua empresa atinja os objetivos de inclusão de forma
+              eficiente e eficaz.
+            </li>
+            <li>
+              <strong
+                >02. Treine talentos em línguas de sinais de todo o
+                mundo:</strong
+              >
+              Forneça treinamento em várias línguas de sinais, capacitando
+              talentos para comunicação global.
+            </li>
+            <li>
+              <strong
+                >03. Facilite oportunidades de trabalho no exterior:</strong
+              >
+              Remova barreiras para a realocação de pessoas surdas com
+              deficiências, abrindo portas para oportunidades internacionais.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Seção Produto - Produto -->
+    <section id="products">
+      <div class="container">
+        <h2>Nossa Estratégia</h2>
+        <div class="product-grid">
+          <div class="product-item">
+            <div class="product-icon">
+              <!-- Espaço reservado para imagem da Plataforma de Gestão de RH -->
+              <img
+                src="assets/features/first.png"
+                alt="Plataforma de Gestão de RH"
+              />
+            </div>
+            <h3>Plataforma de Gestão de RH</h3>
+            <p>
+              Acompanhe o progresso de talentos surdos na adaptação a novas
+              unidades organizacionais, garantindo uma transição suave e
+              bem-sucedida dentro das empresas.
+            </p>
+          </div>
+          <div class="product-item">
+            <div class="product-icon">
+              <!-- Espaço reservado para imagem de Matchmaking Internacional -->
+              <img
+                src="assets/features/second.png"
+                alt="Matchmaking Internacional"
+              />
+            </div>
+            <h3>Matchmaking Internacional</h3>
+            <p>
+              Conecta indivíduos surdos globalmente, oferecendo uma ferramenta
+              de aprendizado de língua de sinais com uma biblioteca prática de
+              GIFs.
+            </p>
+          </div>
+          <div class="product-item">
+            <div class="product-icon">
+              <!-- Espaço reservado para imagem de Caminho de Aprendizagem -->
+              <img
+                src="assets/features/third.png"
+                alt="Caminho de Aprendizagem"
+              />
+            </div>
+            <h3>Caminho de Aprendizagem</h3>
+            <p>
+              Uma jornada gamificada capacita talentos surdos em novas línguas
+              de sinais, preparando-os para desafios em mercados estrangeiros.
+            </p>
+          </div>
+          <!-- Mais itens conforme necessário -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Mídia -->
+    <section id="media">
+      <h2>Destaque na Mídia</h2>
+    
+      <div class="container">
+        <div class="product-grid">
+          <div class="product-item">
+            <div class="product-icon">
+              <img src="assets/media/media-logo1.png" alt="Logotipo da Mídia 1" />
+            </div>
+            <h3>Editora da Universidade de São Paulo</h3>
+            <p>
+              Estudantes da USP conquistam prêmio com aplicativo que estimula o aprendizado de línguas de sinais
+            </p>
+            <a
+              href="https://jornal.usp.br/diversidade/estudantes-da-usp-conquistam-premio-com-aplicativo-que-estimula-aprendizado-de-linguas-de-sinais/"
+              class="button"
+              target="_blank"
+              >Ler Artigo</a
+            >
+          </div>
+    
+          <div class="product-item">
+            <div class="product-icon">
+              <img src="assets/media/media-logo2.png" alt="Logotipo da Mídia 2" />
+            </div>
+            <h3>Editora da Freie Universität Berlin</h3>
+            <p>
+              Segunda edição do Hackathon EdTech Germano-Brasileiro premia aplicativo para aprendizado de línguas de sinais
+            </p>
+            <a
+              href="https://www.fu-berlin.de/en/sites/brazil/ueberuns/news/20230606-2edtechhack.html"
+              class="button"
+              >Ler Artigo</a
+            >
+          </div>
+    
+          <div class="product-item">
+            <div class="product-icon">
+              <img src="assets/media/ufjf.png" alt="Logotipo da Mídia 3" />
+            </div>
+            <h3>Editora da Universidade Federal de Juiz de Fora</h3>
+            <p>
+              Segunda edição do Hackathon EdTech Germano-Brasileiro premia aplicativo para aprendizado de línguas de sinais
+            </p>
+            <a
+              href="https://www2.ufjf.br/noticias/2023/06/15/aluno-de-design-integra-equipe-vencedora-do-german-brazilian-edtech-hackathon/"
+              class="button"
+              target="_blank"
+              >Ler Artigo</a
+            >
+          </div>
+    
+          <div class="product-item">
+            <div class="product-icon">
+              <img src="assets/media/ipol.jpg" alt="Logotipo da Mídia 4" />
+            </div>
+            <h3>
+              IPOL - Instituto de Investigação e Desenvolvimento em Política Linguística
+            </h3>
+            <p>
+              Aplicativo brasileiro que estimula o aprendizado da língua de sinais ganha prêmio internacional
+            </p>
+            <a
+              href="http://ipol.org.br/app-brasileiro-que-estimula-aprendizado-da-lingua-de-sinais-ganha-premio-internacional/"
+              class="button"
+              target="_blank"
+              >Ler Artigo</a
+            >
+          </div>
+    
+          <!-- Mais itens conforme necessário -->
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Team Section -->
+    <section id="team">
+      <h2>Nossa Equipe</h2>
+      <div class="team-grid">
+        <!-- Team Member 1 -->
+        <div class="team-member">
+          <div
+            class="member-photo"
+            style="background-image: url('assets/team/thiago.png')"
+          ></div>
+          <!-- Placeholder for member photo -->
+          <h3>Thiago Henrique</h3>
+          <p>Head de Marketing Digital</p>
+          <p>Economia - <strong>FEA USP</strong></p>
+        </div>
+        <div class="team-member">
+          <div
+            class="member-photo"
+            style="background-image: url('assets/team/jonathan.png')"
+          ></div>
+          <!-- Placeholder for member photo -->
+          <h3>Jonathan Batista</h3>
+          <p>Head de Crescimento</p>
+          <p>Bioinformática - <strong>USP</strong></p>
+          <p>Bolsista na Universidade de St. Gallen 🇨🇭</p>
+        </div>
+        <div class="team-member">
+          <div
+            class="member-photo"
+            style="background-image: url('assets/team/caio.png')"
+          ></div>
+          <h3>Caio Quintana</h3>
+          <p>Head de Design</p>
+          <p>Design - <strong>UFJF</strong></p>
+        </div>
+
+        <div class="team-member">
+          <div
+            class="member-photo"
+            style="background-image: url('assets/team/melissa.png')"
+          ></div>
+          <h3>Melissa Motoki</h3>
+          <p>Líder de Front-end</p>
+          <p>Ciência da Computação - <strong>USP</strong></p>
+        </div>
+
+        <div class="team-member">
+          <div
+            class="member-photo"
+            style="background-image: url('assets/team/pedroaugusto.png')"
+          ></div>
+          <h3>Pedro Augusto</h3>
+          <p>Pesquisa e Head de Relações Públicas</p>
+          <p>Ciência da Computação - <strong>USP</strong></p>
+        </div>
+
+        <div class="team-member">
+          <div
+            class="member-photo"
+            style="background-image: url('assets/team/pedrokenzo.png')"
+          ></div>
+          <h3>Pedro Kenzo</h3>
+          <p>Líder de Tecnologia</p>
+          <p>Ciência da Computação - <strong>USP</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Fale Conosco</h2>
+      <div class="contact-grid">
+        <!-- Contact Form Column -->
+        <div class="contact-form">
+          <form action="submit-form-url" method="post">
+            <input type="text" name="name" placeholder="Seu Nome" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Seu E-mail"
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="Sua Mensagem"
+              required
+            ></textarea>
+            <button type="submit">Enviar Mensagem</button>
+          </form>
+        </div>
+        <!-- Contact Details Column -->
+        <div class="contact-details">
+          <p>
+            Email:
+            <a href="mailto:signlinkproject@gmail.com"
+              >signlinkproject@gmail.com</a
+            >
+          </p>
+          <!-- Embed Google Maps -->
+          <!-- <div class="google-maps">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.179224392149!2d-47.89366518494601!3d-22.008712785965085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9c7a3c78673a1%3A0x4b0f7624eb1a0e91!2sUniversidade%20de%20S%C3%A3o%20Paulo%20-%20USP%20S%C3%A3o%20Carlos!5e0!3m2!1sen!2sbr!4v1666285569014!5m2!1sen!2sbr"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="assets/logo.png" alt="Logotipo da SignLink" />
+        </div>
+        <div class="footer-nav">
+          <ul>
+            <li><a href="#awards">Prêmios</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#products">O Produto</a></li>
+            <li><a href="#media">Mídia</a></li>
+            <li><a href="#team">Equipe</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <p>
+            Siga-nos em:
+            <a href="https://www.linkedin.com/company/sign-link-project/"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+        <p class="footer-rights">
+          &copy; 2023 SignLink. Todos os Direitos Reservados.
+        </p>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
-    <div vw class="enabled">
+    <div vw class="enabled" id="widget">
       <div vw-access-button class="active"></div>
       <div vw-plugin-wrapper>
         <div class="vw-plugin-top-wrapper"></div>

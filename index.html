@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta
       name="description"
-      content="SignLink - Your Edtech Solution for learning and connecting through sign language."
+      content="SignLink - Sua solução Edtech para aprender e conectar-se através da língua de sinais."
     />
     <meta
       name="keywords"
@@ -98,7 +98,7 @@
 
     <!-- Video Section -->
     <section class="video-section">
-      <h2>Innovating since day one! </h2>
+      <h2>Innovating since day one!</h2>
       <div class="video-container">
         <iframe
           width="50%"
@@ -106,7 +106,8 @@
           src="https://www.youtube.com/embed/IZgCUhx1KyY?autoplay=1&start=6186"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
+          allowfullscreen
+        >
         </iframe>
       </div>
     </section>
@@ -469,7 +470,7 @@
     </footer>
 
     <script src="script.js"></script>
-    <div vw class="enabled">
+    <div vw class="enabled" id="widget">
       <div vw-access-button class="active"></div>
       <div vw-plugin-wrapper>
         <div class="vw-plugin-top-wrapper"></div>
@@ -477,6 +478,28 @@
     </div>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
+      const widgetDiv = document.getElementById("widget");
+      const alertCard = document.createElement("div");
+      alertCard.className = "alert-card";
+      alertCard.textContent =
+        "We apologize but this feature is only available on the Brazilian Portuguese page with full support for the Brazilian Sign Language - LIBRAS";
+
+      // Append the alert card to the body
+      document.body.appendChild(alertCard);
+
+      // Hide the alert card by default
+      alertCard.style.display = "none";
+
+      // Show the alert card when hovering over the widget div
+      widgetDiv.addEventListener("mouseenter", () => {
+        alertCard.style.display = "block";
+      });
+
+      // Hide the alert card when moving the mouse away from the widget div
+      widgetDiv.addEventListener("mouseleave", () => {
+        alertCard.style.display = "none";
+      });
+
       new window.VLibras.Widget("https://vlibras.gov.br/app");
     </script>
   </body>
