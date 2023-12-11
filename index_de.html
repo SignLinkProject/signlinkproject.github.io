@@ -2,30 +2,29 @@
 <html>
   <head>
     <title>Work in Progress</title>
-    <style>
-      body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-        font-family: Arial, sans-serif;
-      }
-
-      .warning {
-        background-color: yellow;
-        padding: 20px;
-        border: 1px solid black;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-    <div class="warning">
-      <a href="index.html">
-        <img src="assets/logo.png" alt="SignLink Logo" />
-      </a>
-      <h1>Arbeiten in Bearbeitung</h1>
-      <p>Diese Seite befindet sich derzeit im Aufbau.</p>
+    <div class="warning-container">
+      <div class="warning-card">
+        <a href="index.html" class="warning-logo">
+          <img src="assets/logo.png" alt="SignLink Logo" />
+        </a>
+        <h1>Arbeiten in Bearbeitung</h1>
+        <p>Diese Seite befindet sich derzeit im Aufbau.</p>
+      </div>
     </div>
+
+    <script src="script.js"></script>
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
   </body>
 </html>

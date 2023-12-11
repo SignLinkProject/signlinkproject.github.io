@@ -235,6 +235,16 @@ footer {
   margin-top: 10px;
 }
 
+/* Media Section */
+.video-section {
+  background-color: #333;
+  color: #fff;
+}
+
+.video-section h2 {
+  margin-bottom: 1rem;
+}
+
 /* Responsive adjustments for the footer */
 @media (max-width: 768px) {
   .footer-content {
@@ -257,8 +267,6 @@ footer {
     padding: 5px;
   }
 }
-
-
 
 /* Carousel, Button, and other styles remain the same */
 /* Carousel Container Styles */
@@ -740,4 +748,42 @@ footer {
 #awards img {
   max-width: 200px;
   height: auto;
+}
+
+
+/* Warning Card */
+
+.center-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Full height of the viewport */
+}
+
+.warning-card {
+  text-align: center;
+  padding: 50px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff; /* or any light color of your choice */
+  max-width: 500px; /* Adjust as needed */
+  margin: auto;
+}
+
+.warning-card h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.warning-card p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.logo {
+  max-width: 150px;
+  margin-bottom: 20px;
 }
