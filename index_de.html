@@ -1,22 +1,486 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Work in Progress</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="SignLink - Ihre EdTech-Lösung zum Lernen und Verbinden mittels Gebärdensprache."
+    />
+    <meta
+      name="keywords"
+      content="SignLink, EdTech, Gebärdensprache, Bildung, Technologie, Lernen"
+    />
+    <meta name="author" content="SignLink" />
+
+    <!-- Open Graph tags for social media sharing -->
+    <meta property="og:title" content="SignLink - Ihre EdTech-Lösung" />
+    <meta
+      property="og:description"
+      content="Verbinden Sie sich und lernen Sie mit unserer innovativen Plattform für Gebärdensprache."
+    />
+    <meta property="og:url" content="https://signlinkproject.github.io/" />
+    <!-- Replace with your site URL -->
+    <meta property="og:type" content="website" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
+
+    <!-- Apple Touch Icon (at least 200x200px) -->
+    <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png" />
+
+    <!-- For Windows Tiles -->
+    <meta
+      name="msapplication-square150x150logo"
+      content="assets/favicon/ms-icon-150x150.png"
+    />
+
+    <title>SignLink - Ihre EdTech-Lösung</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- Add any other meta tags, fonts, or head content here -->
   </head>
+
   <body>
-    <div class="warning-container">
-      <div class="warning-card">
-        <a href="index.html" class="warning-logo">
-          <img src="assets/logo.png" alt="SignLink Logo" />
-        </a>
-        <h1>Arbeiten in Bearbeitung</h1>
-        <p>Diese Seite befindet sich derzeit im Aufbau.</p>
+    <!-- Hero Section -->
+    <header class="hero">
+      <div class="hero-image">
+        <img src="assets/logo.png" alt="Tech Gym Training" />
       </div>
-    </div>
+      <div class="hero-content">
+        <h1>Die Welt verbinden - Gebärde für Gebärde</h1>
+        <p>Mehrere Gebärdensprachen lernen, sich mit der Branche vernetzen.</p>
+
+        <div class="sdgs">
+          <img
+            src="assets/SDG4.png"
+            alt="Verpflichtung zu den Zielen für nachhaltige Entwicklung 4: Hochwertige Bildung"
+          />
+          <img
+            src="assets/SDG10.png"
+            alt="Verpflichtung zu den Zielen für nachhaltige Entwicklung 10: Reduzierung der Ungleichheit"
+          />
+        </div>
+      </div>
+    </header>
+
+    <!-- Horizontale Menüleiste -->
+
+    <nav>
+      <div class="nav-logo">
+        <a href="#home">
+          <img src="assets/logo.png" alt="Ihr Logo" />
+        </a>
+      </div>
+      <button class="sandwich-menu" aria-label="Menü öffnen">&#9776;</button>
+      <ul class="menu">
+        <li><a href="#awards">Auszeichnungen</a></li>
+        <li><a href="#about">Über uns</a></li>
+        <li><a href="#products">Das Produkt</a></li>
+        <li><a href="#media">Medien</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+        <li>
+          <div class="language-switcher">
+            <select
+              id="language-dropdown"
+              name="languages"
+              onchange="location = this.value;"
+            >
+            <option value="index_de.html">🇩🇪</option>
+              <option value="index.html">🇺🇸</option>
+              <option value="index_pt.html">🇧🇷</option>
+              <option value="index_es.html">🇪🇸</option>
+            </select>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Videosektion -->
+    <section class="video-section">
+      <h2>Seit Tag eins innovativ!</h2>
+      <div class="video-container">
+        <iframe
+          width="50%"
+          height="500px"
+          src="https://www.youtube.com/embed/IZgCUhx1KyY?autoplay=1&start=6186"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+    </section>
+
+    <!-- Auszeichnungen Sektion -->
+    <section id="awards">
+      <h2>Unsere Auszeichnungen</h2>
+      <div class="awards-grid">
+        <div class="award-card">
+          <div class="product-icon">
+            <img src="assets/awards/edtech.png" alt="Medienlogo 1" />
+          </div>
+          <h3>1. Platz beim Deutsch-Brasilianischen EdTech Hackathon 🥇</h3>
+          <p>
+            Wir sind stolz darauf, als die Top-Innovatoren im deutschen
+            brasilianischen EdTech-Bereich anerkannt worden zu sein und unser
+            Engagement für Bildungstechnologie zu zeigen.
+          </p>
+        </div>
+        <div class="award-card">
+          <div class="product-icon">
+            <img src="assets/awards/santander.jpg" alt="Medienlogo 1" />
+          </div>
+          <h3>2. Platz bei den Santander Awards - Universität 2023 🥈</h3>
+          <p>
+            Unser innovativer Ansatz zum Lernen wurde mit dem zweiten Platz bei
+            den renommierten Santander University Awards 2023 ausgezeichnet.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Über uns Sektion -->
+    <section id="about">
+      <h2>Über uns</h2>
+
+      <div class="about-container">
+        <div class="about-card">
+          <div class="about-header">
+            <div class="product-icon">
+              <img src="assets/features/problem.png" alt="Medienlogo 1" />
+            </div>
+          </div>
+          <h3>Das Problem</h3>
+
+          <ul>
+            <li>
+              <strong>Mangelnde Vorbereitung:</strong> Bei der Schaffung
+              geeigneter Stellenangebote für gehörlose Menschen mit
+              Behinderungen in Auswahlverfahren.
+            </li>
+            <li>
+              <strong>Schlechte Inklusion:</strong> Personalabteilungen sind
+              unvorbereitet, gehörlose Mitarbeiter einzustellen und zu
+              integrieren.
+            </li>
+            <li>
+              <strong>Internationale Barrieren:</strong> Schwierigkeiten bei der
+              Umsiedlung gehörloser Menschen mit Behinderungen aufgrund
+              fehlender Schulung in fremden Gebärdensprachen.
+            </li>
+          </ul>
+        </div>
+
+        <div class="about-card">
+          <div class="about-header">
+            <div class="product-icon">
+              <img src="assets/features/solution.png" alt="Medienlogo 1" />
+            </div>
+          </div>
+          <h3>Unsere Lösung</h3>
+          <ul>
+            <li>
+              <strong
+                >01. Erfüllen Sie die Inklusionsziele Ihres
+                Unternehmens:</strong
+              >
+              Stellen Sie sicher, dass Ihr Unternehmen Inklusionsziele effizient
+              und effektiv erreicht.
+            </li>
+            <li>
+              <strong
+                >02. Schulen Sie Talente in Gebärdensprachen aus aller
+                Welt:</strong
+              >
+              Bieten Sie Schulungen in verschiedenen Gebärdensprachen an und
+              stärken Sie Talente für die weltweite Kommunikation.
+            </li>
+            <li>
+              <strong
+                >03. Erleichtern Sie Arbeitsmöglichkeiten im Ausland:</strong
+              >
+              Beseitigen Sie Barrieren für die Umsiedlung gehörloser Menschen
+              mit Behinderungen und öffnen Sie Türen zu internationalen Chancen.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Produkt - Produkt Sektion -->
+    <section id="products">
+      <div class="container">
+        <h2>Unsere Strategie</h2>
+        <div class="product-grid">
+          <div class="product-item">
+            <div class="product-icon">
+              <!-- Platzhalterbild für HR-Management-Plattform -->
+              <img
+                src="assets/features/first.png"
+                alt="HR-Management-Plattform"
+              />
+            </div>
+            <h3>HR-Management-Plattform</h3>
+            <p>
+              Verfolgen Sie den Fortschritt gehörloser Talente bei der Anpassung
+              an neue Organisationsbereiche und gewährleisten Sie einen
+              reibungslosen und erfolgreichen Übergang in Unternehmen.
+            </p>
+          </div>
+          <div class="product-item">
+            <div class="product-icon">
+              <!-- Platzhalterbild für Internationale Vermittlung -->
+              <img
+                src="assets/features/second.png"
+                alt="Internationale Vermittlung"
+              />
+            </div>
+            <h3>Internationale Vermittlung</h3>
+            <p>
+              Vernetzen Sie gehörlose Personen weltweit und bieten Sie ein
+              Lernwerkzeug für Gebärdensprache mit einer praktischen
+              GIF-Bibliothek.
+            </p>
+          </div>
+          <div class="product-item">
+            <div class="product-icon">
+              <!-- Platzhalterbild für Lernpfad -->
+              <img src="assets/features/third.png" alt="Lernpfad" />
+            </div>
+            <h3>Lernpfad</h3>
+            <p>
+              Eine gamifizierte Reise stärkt gehörlose Talente in neuen
+              Gebärdensprachen und bereitet sie auf Herausforderungen in
+              ausländischen Märkten vor.
+            </p>
+          </div>
+          <!-- Weitere Elemente nach Bedarf -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Medien Sektion -->
+    <section id="media">
+      <h2>In den Medien vorgestellt</h2>
+
+      <div class="container">
+        <div class="product-grid">
+          <div class="product-item">
+            <div class="product-icon">
+              <img src="assets/media/media-logo1.png" alt="Medienlogo 1" />
+            </div>
+            <h3>Universität São Paulo Press</h3>
+            <p>
+              USP-Studenten gewinnen Auszeichnung mit App, die das Lernen von
+              Gebärdensprachen fördert.
+            </p>
+            <a
+              href="https://jornal.usp.br/diversidade/estudantes-da-usp-conquistam-premio-com-aplicativo-que-estimula-aprendizado-de-linguas-de-sinais/"
+              class="button"
+              target="_blank"
+              >Artikel lesen</a
+            >
+          </div>
+
+          <div class="product-item">
+            <div class="product-icon">
+              <img src="assets/media/media-logo2.png" alt="Medienlogo 2" />
+            </div>
+            <h3>Freie Universität Berlin Press</h3>
+            <p>
+              Zweite Ausgabe des Deutsch-Brasilianischen EdTech Hackathon
+              zeichnet App für das Erlernen von Gebärdensprachen aus.
+            </p>
+            <a
+              href="https://www.fu-berlin.de/en/sites/brazil/ueberuns/news/20230606-2edtechhack.html"
+              class="button"
+              >Artikel lesen</a
+            >
+          </div>
+
+          <div class="product-item">
+            <div class="product-icon">
+              <img src="assets/media/ufjf.png" alt="Medienlogo 2" />
+            </div>
+            <h3>Universität Federal de Juiz de Fora Press</h3>
+            <p>
+              Zweite Ausgabe des Deutsch-Brasilianischen EdTech Hackathon
+              zeichnet App für das Erlernen von Gebärdensprachen aus.
+            </p>
+            <a
+              href="https://www2.ufjf.br/noticias/2023/06/15/aluno-de-design-integra-equipe-vencedora-do-german-brazilian-edtech-hackathon/"
+              class="button"
+              target="_blank"
+              >Artikel lesen</a
+            >
+          </div>
+
+          <div class="product-item">
+            <div class="product-icon">
+              <img src="assets/media/ipol.jpg" alt="Medienlogo 2" />
+            </div>
+            <h3>
+              IPOL - Institut für Forschung und Entwicklung in Sprachpolitik
+            </h3>
+            <p>
+              Brasilianische App, die das Erlernen der Gebärdensprache fördert,
+              gewinnt internationalen Preis
+            </p>
+            <a
+              href="http://ipol.org.br/app-brasileiro-que-estimula-aprendizado-da-lingua-de-sinais-ganha-premio-internacional/"
+              class="button"
+              target="_blank"
+              >Artikel lesen</a
+            >
+          </div>
+
+          <!-- Weitere Elemente nach Bedarf -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Team-Bereich -->
+    <section id="team">
+      <h2>Unser Team</h2>
+      <div class="team-grid">
+        <!-- Teammitglied 1 -->
+        <div class="team-member">
+          <div
+            class="member-photo"
+            style="background-image: url('assets/team/thiago.png')"
+          ></div>
+          <!-- Platzhalter für Mitgliederfoto -->
+          <h3>Thiago Henrique</h3>
+          <p>Leiter für digitales Marketing</p>
+          <p>Wirtschaft - <strong>FEA USP</strong></p>
+        </div>
+        <div class="team-member">
+          <div
+            class="member-photo"
+            style="background-image: url('assets/team/jonathan.png')"
+          ></div>
+          <!-- Platzhalter für Mitgliederfoto -->
+          <h3>Jonathan Batista</h3>
+          <p>Leiter für Wachstum</p>
+          <p>Bioinformatik - <strong>USP</strong></p>
+          <p>Fellow an der Universität St. Gallen 🇨🇭</p>
+        </div>
+        <div class="team-member">
+          <div
+            class="member-photo"
+            style="background-image: url('assets/team/caio.png')"
+          ></div>
+          <h3>Caio Quintana</h3>
+          <p>Leiter für Design</p>
+          <p>Design - <strong>UFJF</strong></p>
+        </div>
+
+        <div class="team-member">
+          <div
+            class="member-photo"
+            style="background-image: url('assets/team/melissa.png')"
+          ></div>
+          <h3>Melissa Motoki</h3>
+          <p>Leiterin für Front-End</p>
+          <p>Informatik - <strong>USP</strong></p>
+        </div>
+
+        <div class="team-member">
+          <div
+            class="member-photo"
+            style="background-image: url('assets/team/pedroaugusto.png')"
+          ></div>
+          <h3>Pedro Augusto</h3>
+          <p>Forschung und Leiter für Öffentlichkeitsarbeit</p>
+          <p>Informatik - <strong>USP</strong></p>
+        </div>
+
+        <div class="team-member">
+          <div
+            class="member-photo"
+            style="background-image: url('assets/team/pedrokenzo.png')"
+          ></div>
+          <h3>Pedro Kenzo</h3>
+          <p>Technischer Leiter</p>
+          <p>Informatik - <strong>USP</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontaktbereich -->
+    <section id="contact">
+      <h2>Kontaktiere uns</h2>
+      <div class="contact-grid">
+        <!-- Kontaktformular-Spalte -->
+        <div class="contact-form">
+          <form action="submit-form-url" method="post">
+            <input type="text" name="name" placeholder="Dein Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Deine E-Mail-Adresse"
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="Deine Nachricht"
+              required
+            ></textarea>
+            <button type="submit">Nachricht senden</button>
+          </form>
+        </div>
+        <!-- Kontaktinformationen-Spalte -->
+        <div class="contact-details">
+          <p>
+            E-Mail:
+            <a href="mailto:signlinkproject@gmail.com"
+              >signlinkproject@gmail.com</a
+            >
+          </p>
+          <!-- Google Maps einbetten -->
+          <!-- <div class="google-maps">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.179224392149!2d-47.89366518494601!3d-22.008712785965085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9c7a3c78673a1%3A0x4b0f7624eb1a0e91!2sUniversidade%20de%20S%C3%A3o%20Paulo%20-%20USP%20S%C3%A3o%20Carlos!5e0!3m2!1sen!2sbr!4v1666285569014!5m2!1sen!2sbr"
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="assets/logo.png" alt="SignLink Logo" />
+        </div>
+        <div class="footer-nav">
+          <ul>
+            <li><a href="#awards">Auszeichnungen</a></li>
+            <li><a href="#about">Über uns</a></li>
+            <li><a href="#products">Das Produkt</a></li>
+            <li><a href="#media">Medien</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <p>
+            Folge uns auf:
+            <a href="https://www.linkedin.com/company/sign-link-project/"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+        <p class="footer-rights">
+          &copy; 2023 SignLink. Alle Rechte vorbehalten.
+        </p>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
-    <div vw class="enabled">
+    <div vw class="enabled" id="widget">
       <div vw-access-button class="active"></div>
       <div vw-plugin-wrapper>
         <div class="vw-plugin-top-wrapper"></div>
@@ -24,6 +488,28 @@
     </div>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
+      const widgetDiv = document.getElementById("widget");
+      const alertCard = document.createElement("div");
+      alertCard.className = "alert-card";
+      alertCard.textContent =
+        "Wir entschuldigen uns, aber diese Funktion ist nur auf der brasilianischen Portugiesisch-Seite mit vollständiger Unterstützung für die brasilianische Gebärdensprache - LIBRAS verfügbar";
+
+      // Das Alert-Karten-Element dem Body hinzufügen
+      document.body.appendChild(alertCard);
+
+      // Die Alert-Karte standardmäßig ausblenden
+      alertCard.style.display = "none";
+
+      // Die Alert-Karte anzeigen, wenn der Mauszeiger über das Widget-Div bewegt wird
+      widgetDiv.addEventListener("mouseenter", () => {
+        alertCard.style.display = "block";
+      });
+
+      // Die Alert-Karte ausblenden, wenn der Mauszeiger vom Widget-Div wegbewegt wird
+      widgetDiv.addEventListener("mouseleave", () => {
+        alertCard.style.display = "none";
+      });
+
       new window.VLibras.Widget("https://vlibras.gov.br/app");
     </script>
   </body>
