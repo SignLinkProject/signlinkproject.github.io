@@ -494,7 +494,8 @@ footer {
 .hero-image img {
   transition-timing-function: ease-in;
   transition: 0.2s;
-  max-width: 100%; /* Ensure the image is responsive */
+  max-width: 700px; /* Ensure the image is responsive */
+  width: 100%;
   height: auto;
 }
 
