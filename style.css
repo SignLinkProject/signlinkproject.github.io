@@ -9,8 +9,12 @@ h2 {
   font-size: 2.5rem;
 }
 
+* {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
 body {
-  font-family: "Arial", sans-serif;
   line-height: 1.6;
   padding-top: 60px; /* Give space for fixed menu */
 }
