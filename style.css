@@ -209,13 +209,13 @@ footer {
 }
 
 .footer-nav a {
-  color: #6e44ff;
+  color: #ffffff;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-.footer-nav a:hover {
-  color: #ffffff;
+.footer-nav a:hover, .footer-social a:hover{
+  color: #9973F6;
   text-decoration: underline;
 }
 
@@ -228,8 +228,9 @@ footer {
 }
 
 .footer-social a {
-  color: #6e44ff;
+  color: #fff;
   padding: 0 5px;
+  text-decoration: none;
 }
 
 .footer-rights {
@@ -241,7 +242,7 @@ footer {
 
 /* Media Section */
 .video-section {
-  background-color: #333;
+  background-color: #9973F6;
   color: #fff;
 }
 
@@ -468,8 +469,9 @@ footer {
 }
 
 .hero img:hover {
-  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.4); /* More pronounced shadow on hover */
-  animation: shake 0.5s; /* Assuming the shake animation is still desired */
+  transform: scale(1.1);
+  /*box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.4); /* More pronounced shadow on hover */
+  /* animation: shake 0.5s; /* Assuming the shake animation is still desired */
   animation-iteration-count: 1;
 }
 
@@ -490,6 +492,8 @@ footer {
 }
 
 .hero-image img {
+  transition-timing-function: ease-in;
+  transition: 0.2s;
   max-width: 100%; /* Ensure the image is responsive */
   height: auto;
 }
