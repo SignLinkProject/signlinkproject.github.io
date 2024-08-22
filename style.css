@@ -576,7 +576,6 @@ footer {
 .team-member {
   text-align: center;
   padding: 10px;
-  margin-right: 2rem;
 }
 
 .member-photo {
@@ -622,9 +621,6 @@ footer {
     margin: 10px 0;
   }
 
-  .team-grid {
-    grid-template-columns: 1fr 1fr; /* Two columns layout for smaller screens */
-  }
 
   .product-grid {
     grid-template-columns: 1fr; /* Single column layout for smaller screens */
