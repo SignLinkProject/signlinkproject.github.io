@@ -567,7 +567,7 @@ footer {
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Three columns layout */
+  grid-template-columns: repeat(2, 1fr); /* Three columns layout */
   grid-gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
